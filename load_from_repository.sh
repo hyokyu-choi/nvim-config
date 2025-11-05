@@ -19,3 +19,5 @@ if test -d ~/.backup/nvim; then
 fi
 mv ~/.config/nvim ~/.backup
 cp -r ./nvim ~/.config/nvim/
+
+rm ~/.config/nvim/plugins/image.lua   # not work in gate
