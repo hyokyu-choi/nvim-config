@@ -10,4 +10,14 @@ return {
     -- "echasnovski/mini.pick",         -- optional
     -- "folke/snacks.nvim",             -- optional
   },
+  config = function()
+    local neogit = require("neogit")
+    local map = vim.keymap.set
+
+    neogit.setup {
+      kind = "floating",
+    }
+
+    map('n', '<leader>gs', ':Neogit<CR>', { desc = "Neogit status" })
+  end,
 }

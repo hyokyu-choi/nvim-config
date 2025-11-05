@@ -2,7 +2,7 @@ local map = vim.keymap.set
 local functions = require('core.functions')
 
 -- Terminal mode
-map('n', 'T', ':terminal<CR>')
+-- map('n', 'T', ':terminal<CR>')   -- instead use toggleterm.nvim
 map('t', '<C-[>', '<esc>')
 map('t', '<esc>', '<C-\\><C-n>')
 

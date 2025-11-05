@@ -14,7 +14,7 @@ return {
       })
     end,
     keys = {
-      {'<leader>t', '<cmd>Telescope<cr>', desc = 'Telescope'},
+      {'T', '<cmd>Telescope<cr>', desc = 'Telescope'},
       {'<leader>ff', '<cmd>Telescope find_files<cr>', desc = 'Telescope fine files'},
       {'<leader>fg', '<cmd>Telescope live_grep<cr>', desc = 'Telescope find grep'},
       {'<leader>fb', '<cmd>Telescope buffers<cr>', desc = 'Telescope buffers list'},

@@ -31,14 +31,14 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      vim.diagnostic.config({ virtual_text = false })
-
-      vim.api.nvim_create_autocmd("CursorHold", {
-        pattern = "*",
-        callback = function()
-          vim.diagnostic.open_float(nil, { focus = false })
-        end,
-      })
+      -- vim.diagnostic.config({ virtual_text = false })
+      --
+      -- vim.api.nvim_create_autocmd("CursorHold", {
+      --   pattern = "*",
+      --   callback = function()
+      --     vim.diagnostic.open_float(nil, { focus = false })
+      --   end,
+      -- })
 
       local lspconfig = require('lspconfig')
       -- LSP settings (for overriding per client)
