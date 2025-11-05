@@ -20,4 +20,4 @@ fi
 mv ~/.config/nvim ~/.backup
 cp -r ./nvim ~/.config/nvim/
 
-rm ~/.config/nvim/plugins/image.lua   # not work in gate
+rm ~/.config/nvim/lua/plugins/image.lua   # not work in gate
