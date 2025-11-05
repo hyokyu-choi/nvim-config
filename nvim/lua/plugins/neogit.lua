@@ -18,6 +18,7 @@ return {
       kind = "floating",
     }
 
-    map('n', '<leader>gs', ':Neogit<CR>', { desc = "Neogit status" })
+    map('n', '<leader>gs', function() neogit.open() end, { desc = "Neogit status" })
+    map('n', '<leader>gp', function() neogit.open({ "push" }) end, { desc = "Neogit push" })
   end,
 }
